@@ -20,7 +20,6 @@ def find_row(seats, k):
             if row[j] == 0:
                 count += 1
                 if count == k:
-                    # Проверяем последние k мест подряд
                     if all(x == 0 for x in row[j-k+1:j+1]):
                         return i
             else:
